@@ -52,7 +52,13 @@ function eliminarProduct(e){
         const productId = e.target.getAttribute('data-id');
         
         carrito = carrito.filter( product => product.id !== productId );
-
+        Swal.fire({
+            position: 'top-end',
+            icon: 'success',
+            title: 'Eliminado',
+            showConfirmButton: false,
+            timer: 1500
+          })
         cargarHTML();
     }
 }
@@ -104,6 +110,13 @@ function leerDatosProduct(product){
         // Agregando elementos al carrito, tomamos una copia de lo que haya en este carrito.
         carrito = [...carrito, infoProduct]
     }
+    Swal.fire({
+        position: 'top-end',
+        icon: 'success',
+        title: 'agregado',
+        showConfirmButton: false,
+        timer: 1500
+      })
     cargarHTML()
 }
 function cargarHTML(){
