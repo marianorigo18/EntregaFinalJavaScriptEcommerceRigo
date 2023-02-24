@@ -1,0 +1,100 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Serif+Khojki:wght@400;500;600;700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,wght@0,200;0,300;0,400;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,600;1,700;1,800;1,900&display=swap');
+a{
+    text-decoration: none;
+    color: #7b7b7b;
+}
+.max-width-one-thousand{
+    max-width: 1000px;
+}
+.card__home {
+    transition: .3s; }
+  
+  .card__home:hover {
+    scale: 1.02; }
+  
+  .card__title {
+    font-size: 16px;
+    font-family: 'Roboto', sans-serif;
+    text-transform: uppercase;
+    color: #000; }
+  
+  .banner__topic {
+    font-family: 'Nunito Sans', sans-serif; }
+  
+  .banner__topic {
+    margin-top: 120px;
+    border-radius: 5px;
+    transition: .3s; }
+    @media (max-width: 780px) {
+      .banner__topic {
+        margin-top: 50px; } }
+  
+  .banner__topic:hover {
+    box-shadow: 0 1px 30px rgba(0, 0, 0, 0.1);
+    scale: 1.01; }
+  
+  .topic__img img {
+    height: 100%;
+    object-fit: cover;
+    width: 100%;
+    max-height: 320px; 
+  }
+  
+  .topic__title {
+    font-size: 40px; 
+  }
+  
+  .topic__subtitle {
+    font-size: 12px; 
+  }
+  
+  .card__link{
+    transition: .3s; 
+  }
+  .card__button{
+    visibility: hidden;
+    margin: 0 0 5px 5px;
+  }
+  .input-card{
+    width: 50%;
+    visibility: hidden;
+    margin: 5px;
+  }
+  .card__link:hover {
+    box-shadow: 0 1px 30px rgba(0, 0, 0, 0.1);
+    scale: 1.01; 
+  }
+  .card__link:hover .card__button{
+    visibility: visible;
+  }
+  .card__link:hover .input-card{
+    visibility: visible;
+  }
+  .inputContainer{
+    display: flex;
+    justify-content: center;
+  }
+  .input-card{
+    border-radius: 5px;
+    border: 1px solid #E5E7E9 ;
+    color: #7b7b7b;
+  }
+  .button-container{
+    display: flex;
+    justify-content: center;
+  } 
+  .borrar-product{
+    background: red;
+    padding: 0 5px;
+    border-radius: 50%;
+    color: white;
+    transition: .3s;
+  }
+  .borrar-product:hover{
+    color: white;
+  }
+  /*Container Carrito*/
+  .container-carrito{
+    height: 97vh;
+  }
