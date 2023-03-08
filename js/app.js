@@ -53,7 +53,6 @@ function eliminarProduct(e){
         
         carrito = carrito.filter( product => product.id !== productId );
         Swal.fire({
-            position: 'top-end',
             icon: 'success',
             title: 'Eliminado',
             showConfirmButton: false,
